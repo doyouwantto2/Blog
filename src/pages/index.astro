@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro'
+import { Sample } from '../components/sample';
 const pageTitle = "Home Page";
 const { name, email } = Astro.props
 ---
+Before slot
 <BaseLayout>
   <h2>My awesome blog subtitle</h2>
 </BaseLayout>
+
+<Sample client:load/>
+
+<Footer/>
+
